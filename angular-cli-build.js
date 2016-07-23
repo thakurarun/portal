@@ -3,7 +3,7 @@
 // Also see https://github.com/angular/angular-cli/wiki/3rd-party-libs
 
 /* global require, module */
-
+//http://stackoverflow.com/questions/35404737/how-to-use-less-with-angular-2
 var Angular2App = require('angular-cli/lib/broccoli/angular2-app');
 
 module.exports = function(defaults) {
@@ -15,7 +15,9 @@ module.exports = function(defaults) {
       'es6-shim/es6-shim.js',
       'reflect-metadata/**/*.+(ts|js|js.map)',
       'rxjs/**/*.+(js|js.map)',
-      '@angular/**/*.+(js|js.map)'
+      '@angular/**/*.+(js|js.map)',
+      'bootstrap/dist/**',
+      'less/dist/less.min.js'
     ]
   });
 };
