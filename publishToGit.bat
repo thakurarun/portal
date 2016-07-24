@@ -1,0 +1,1 @@
+xcopy "dist" "..\publish\code" /e /i /h
