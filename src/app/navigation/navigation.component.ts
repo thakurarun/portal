@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild , trigger, state, style, transition, animate } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+declare var jQuery:any;
 @Component({
   moduleId: module.id,
   selector: 'app-navigation',
@@ -9,6 +10,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
   title: string = "Arun Thakur";
+  navs : string[] = [];
   constructor() {
 
   }

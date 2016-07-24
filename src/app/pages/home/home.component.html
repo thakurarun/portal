@@ -1,3 +1,25 @@
-<p>
-  home works!
-</p>
+<section class="home">
+  <div class="jumbotron">
+    <h1>Hi there, I'm Arun Thakur!</h1>
+    <p>
+      Currently working with <a href="http://www.basware.com/" target="blank">Basware, India</a> as frontend developer. Apart
+      from that I am continually working on latest technologies like nativescript, angular2, typescript and many more which
+      ever I feel has good potential in the real world.
+    </p>
+    <p>
+      Current technologies I am working on:
+    </p>
+    <ul>
+      <li *ngFor="let lang of languages" class='btn' [ngClass]="{active: lang[2]}" role="group" (click)="filterAndSortByLatestRepositories(lang)">
+        <a href="javascript:void(0);">{{lang[0]}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="list-group" *ngFor="let repo of gitRepositories">
+    <div class="list-group-item">
+      <h4>{{ repo.name }} ({{repo.language}})</h4>
+      <a href="{{repo.html_url}}" target="_blank">View Source </a>
+    </div>
+  </div>
+</section>

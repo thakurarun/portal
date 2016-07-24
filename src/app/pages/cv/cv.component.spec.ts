@@ -2,7 +2,7 @@
 
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import {GitService} from '../../services/gitService'
+
 import {
   beforeEach, beforeEachProviders,
   describe, xdescribe,
@@ -10,11 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
+import { CvComponent } from './cv.component';
 
-describe('Component: Home', () => {
-  it('should create an instance',inject([GitService], (testService: GitService) => {
-    let component = new HomeComponent(testService);
+describe('Component: Cv', () => {
+  it('should create an instance', () => {
+    let component = new CvComponent();
     expect(component).toBeTruthy();
-  }));
+  });
 });

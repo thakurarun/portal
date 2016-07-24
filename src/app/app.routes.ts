@@ -1,8 +1,6 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-
+import * as Components  from './pages/Components';
 const routes: RouterConfig = [
   {
     path: '',
@@ -11,11 +9,19 @@ const routes: RouterConfig = [
   },
   {
     path: '',
-    component: HomeComponent
+    component: Components.HomeComponent
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: Components.AboutComponent
+  },
+   {
+    path: 'cv',
+    component: Components.CvComponent
+  },
+   {
+    path: 'contact',
+    component: Components.ContactComponent
   },
 ];
 

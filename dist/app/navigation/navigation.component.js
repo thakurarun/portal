@@ -13,6 +13,7 @@ var router_1 = require('@angular/router');
 var NavigationComponent = (function () {
     function NavigationComponent() {
         this.title = "Arun Thakur";
+        this.navs = [];
     }
     NavigationComponent.prototype.ngOnInit = function () {
     };
